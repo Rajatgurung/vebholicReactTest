@@ -48,6 +48,7 @@ function TextInput(props) {
   };
   const deleteOption = (index) => {
     const options = localState.options.filter((_, i) => i != index);
+    if (options.length <= 0) return alert("Cannot delete Last option");
     setLocalState({ ...localState, options });
   };
   const dropDown = [
