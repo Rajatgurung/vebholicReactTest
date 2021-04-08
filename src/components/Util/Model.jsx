@@ -15,7 +15,7 @@ function Model(props) {
   }, []);
   if (!props.open) return null;
   return (
-    <div className=" fixed flex justify-center items-center h-4/5  top-0 left-0  min-h-screen w-screen ">
+    <div className=" fixed flex z-10 justify-center items-center h-4/5  top-0 left-0  min-h-screen w-screen ">
       <div
         onClick={() => props.close()}
         className=" absolute h-full bg-gray-900 bg-opacity-75  top-0 w-full backdrop-blur-sm backdrop-filter"
